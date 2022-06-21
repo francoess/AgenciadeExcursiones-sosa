@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madryn Adventure</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+     <!--link fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- inicio cabecera  -->
+    <header class="navBackground">
+        <!-- inicio logo-->
+        <h1 class="titulo">Madryn Adventure</h1>
+        <!-- fin logo  -->
+        
+        <!-- inicio navbar  -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/excursiones.html">Excursiones</a></li>
+                    <ul>
+                        <li><a href="../pages/info-ballenas.html">Avistaje de ballenas</a></li>
+                        <li><a href="../pages/info-bici.html">circuito mountain bike </a></li>
+                        <li><a href="../pages/info-lobos.html">Buceo con lobos</a></li>
+                        <li><a href="../pages/info-pinguinos.html">colonia de pingüinos</a></li>
+                    </ul>
+                <li><a href="../pages/reserva.html">Reserva</a></li>
+                <li><a href="../pages/contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <!-- fin navbar -->
+
+    </header>
+    <!-- fin cabecera -->
+
+    <!-- inicio de formulario de contacto -->
+    <section >
+		<article>
+            <h3>Formulario de contacto:</h3>
+			<form>
+                <label for="nombre"> ingresa tu nombre:</label>
+				<input type="text" id="nombre"><br/>
+                <hr/>
+                <label for="apellido"> ingresa tu apellido:</label>
+				<input type="text" id="apellido"><br/>
+                <hr/>
+                <label for="email"> ingresa tu email:</label>
+				<input type="text" id="email"><br/>
+                <hr/>
+
+                <label for="consulta">ingrese su consulta:</label> <br/>
+                <textarea id="consulta" rows="10" cols="50"></textarea>
+                <br/>
+                <div>Queres recibir info sobre nosotros?
+                    <input type="checkbox" name="acepta" value="1"></div>
+                <input type="submit"/>
+                <input type="reset"/>
+                <hr/>
+                <label for="numero"> Tambien puedes contactarnos a nuestro Whatsapp +542804222333</label>
+                <label for="instagram">o por nuestro instagram <a href="https://www.instagram.com" target="_blank">Ir a instagram</a></label>
+            </form>
+        </article>
+    </section>
+
+    <!-- inicio de footer --> 
+	<footer>
+		<p>Madryn Adventure</p>
+	</footer>
+    <!-- fin de footer -->
+
+</body>
+</HTML>

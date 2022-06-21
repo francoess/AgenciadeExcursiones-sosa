@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<HTML lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madryn Adventure</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+    <!-- inicio cabecera  -->
+    <header class="navBackground">
+        <!-- inicio logo-->
+        <h1 class="titulo">Madryn Adventure</h1>
+        <!-- fin logo  -->
+        
+        <!-- inicio navbar  -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/excursiones.html">Excursiones</a></li>
+                    <ul>
+                        <li><a href="../pages/info-ballenas.html">Avistaje de ballenas</a></li>
+                        <li><a href="../pages/info-bici.html">circuito mountain bike </a></li>
+                        <li><a href="../pages/info-lobos.html">Buceo con lobos</a></li>
+                        <li><a href="../pages/info-pinguinos.html">colonia de pingüinos</a></li>
+                    </ul>
+                <li><a href="../pages/reserva.html">Reserva</a></li>
+                <li><a href="../pages/contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <!-- fin navbar -->
+
+    </header>
+    <!-- fin cabecera -->
+
+    <br/>
+    <br/>
+
+    <!-- inicio formulario de reserva -->
+    <section>
+		<article class="fReserv">
+            <form>
+                <h3>Ingrese datos de reserva sera conectado a la brevedad</h3>
+                <hr/>
+                <label for="nombre"> ingresa tu nombre:</label>
+				<input type="text" id="nombre"><br/>
+                <hr/>
+                <label for="apellido"> ingresa tu apellido:</label>
+				<input type="text" id="apellido"><br/>
+                <hr/>
+                <label for="email"> ingresa tu email:</label>
+				<input type="text" id="email"><br/>
+                <hr/>
+                <select>
+                    <option selected="selected">Selecciona una excursion</option>
+                    <option>Avistaje de ballenas</option>
+                    <option>Circuito mountain bike</option>
+                    <option>Buceo con lobos</option>
+                    <option>Colonia de pingüinos</option>
+                </select>
+                <hr/>
+                <label for="cantper"> ingrese cantidad de personas:</label>
+				<input type="number" id="cantper"><br/>
+                <hr/>
+                <label for="fecha">Seleccione fecha de excursion:</label>
+                <input type="date" id="fecha" name="fecha"
+                    value="2022-01-01"
+                    min="2022-01-01" max="2050-12-31">
+                <br/>
+                <hr/>
+                <label for="consulta">ingrese su consulta extra:</label> <br/>
+                <textarea id="consulta" rows="10" cols="50"></textarea>
+                <br/>
+                <input type="submit"/>
+                <input type="reset"/>
+            </form>
+        </article>
+    </section>
+    <!-- fin formulario de reserva -->
+
+    <!-- inicio de footer --> 
+	<footer>
+		<h3>LOGO - Madryn Adventure</h3>
+		<h3>CONTACTO</h3>
+	</footer>
+    <!-- fin de footer -->
+
+</body>
+</HTML>
