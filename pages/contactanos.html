@@ -4,75 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madryn Adventure</title>
+    <!-- link css -->
     <link rel="stylesheet" href="../styles/styles.css">
-     <!--link fonts-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!--link fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <!-- inicio navbar-->
+    <nav class="navbar navbar-expand-lg bg-light fondo">
+        <div class="container-fluid">
 
-    <!-- inicio cabecera  -->
-    <header class="navBackground">
-        <!-- inicio logo-->
-        <h1 class="titulo">Madryn Adventure</h1>
-        <!-- fin logo  -->
-        
-        <!-- inicio navbar  -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/excursiones.html">Excursiones</a></li>
-                    <ul>
-                        <li><a href="../pages/info-ballenas.html">Avistaje de ballenas</a></li>
-                        <li><a href="../pages/info-bici.html">circuito mountain bike </a></li>
-                        <li><a href="../pages/info-lobos.html">Buceo con lobos</a></li>
-                        <li><a href="../pages/info-pinguinos.html">colonia de pingüinos</a></li>
-                    </ul>
-                <li><a href="../pages/reserva.html">Reserva</a></li>
-                <li><a href="../pages/contactanos.html">Contactanos</a></li>
+        <p>Madryn adventure</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="excursiones.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Excursiones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="info-ballenas.html">Avistaje de ballenas</a></li>
+                <li><a class="dropdown-item" href="info-bici.html">Circuito mountain bike </a></li>
+                <li><a class="dropdown-item" href="info-lobos.html">Buceo con lobos</a></li>
+                <li><a class="dropdown-item" href="info-pinguinos.html">Colonia de pingüinos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="reserva.html">Reserva</a></li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactanos.html">Contactanos</a></li>
             </ul>
-        </nav>
-        <!-- fin navbar -->
-
-    </header>
-    <!-- fin cabecera -->
+        </div>
+        </div>
+    </nav>
+    <!-- fin navbar -->
 
     <!-- inicio de formulario de contacto -->
-    <section >
-		<article>
-            <h3>Formulario de contacto:</h3>
-			<form>
-                <label for="nombre"> ingresa tu nombre:</label>
-				<input type="text" id="nombre"><br/>
-                <hr/>
-                <label for="apellido"> ingresa tu apellido:</label>
-				<input type="text" id="apellido"><br/>
-                <hr/>
-                <label for="email"> ingresa tu email:</label>
-				<input type="text" id="email"><br/>
-                <hr/>
+    <div class="conteiner fondo">
+        <div class="row">
+                <section class="caja">
+                    <article >
+                        <h3>Formulario de contacto:</h3>
+                        <form>
+                            <label for="nombre"> ingresa tu nombre:</label>
+                            <input type="text" id="nombre"><br/>
+                            <hr/>
+                            <label for="apellido"> ingresa tu apellido:</label>
+                            <input type="text" id="apellido"><br/>
+                            <hr/>
+                            <label for="email"> ingresa tu email:</label>
+                            <input type="text" id="email"><br/>
+                            <hr/>
 
-                <label for="consulta">ingrese su consulta:</label> <br/>
-                <textarea id="consulta" rows="10" cols="50"></textarea>
-                <br/>
-                <div>Queres recibir info sobre nosotros?
-                    <input type="checkbox" name="acepta" value="1"></div>
-                <input type="submit"/>
-                <input type="reset"/>
-                <hr/>
-                <label for="numero"> Tambien puedes contactarnos a nuestro Whatsapp +542804222333</label>
-                <label for="instagram">o por nuestro instagram <a href="https://www.instagram.com" target="_blank">Ir a instagram</a></label>
-            </form>
-        </article>
-    </section>
+                            <label for="consulta">ingrese su consulta:</label> <br/>
+                            <textarea id="consulta" rows="10" cols="50"></textarea>
+                            <br/>
+                            <div>Queres recibir info sobre nosotros?
+                                <input type="checkbox" name="acepta" value="1"></div>
+                            <input type="submit"/>
+                            <input type="reset"/>
+                            <hr/>
+                            <label for="numero"> Tambien puedes contactarnos a nuestro Whatsapp +542804222333</label>
+                            <label for="instagram">o por nuestro instagram <a href="https://www.instagram.com" target="_blank">Ir a instagram</a></label>
+                        </form>
+                    </article>
+                </section>
+        </div>
+    </div>
+    <!-- inicio de formulario de contacto -->
 
     <!-- inicio de footer --> 
-	<footer>
-		<p>Madryn Adventure</p>
-	</footer>
-    <!-- fin de footer -->
+    <footer class="conteiner fondo">
+        <div class="row">
+            <p>Madryn Adventure</p>
+        </div>
+    </footer>
+    <!--fin de footer--> 
 
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+
 </HTML>

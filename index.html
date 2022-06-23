@@ -4,66 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madryn Adventure</title>
+    
     <!-- link css -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
     <!--link fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <!-- inicio cabecera  -->
-    <div class="grid-contenedor-padre">
-    <header class="navBackground">
-        <!-- inicio logo-->
-        <p class="titulo">Madryn Adventure </p>
-        <!-- fin logo  -->
-        
-        <!-- inicio navbar  -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/excursiones.html">Excursiones</a>
-                    <ul>
-                        <li><a href="pages/info-ballenas.html">Avistaje de ballenas</a></li>
-                        <li><a href="pages/info-bici.html">Circuito mountain bike </a></li>
-                        <li><a href="pages/info-lobos.html">Buceo con lobos</a></li>
-                        <li><a href="pages/info-pinguinos.html">Colonia de pingüinos</a></li>
-                    </ul>
-                </li>
-                <li><a href="pages/reserva.html">Reserva</a></li>
-                <li><a href="pages/contactanos.html">Contactanos</a></li>
+    <!-- inicio navbar-->
+    <nav class="navbar navbar-expand-lg bg-light fondo">
+        <div class="container-fluid">
+
+          <p>Madryn adventure</p>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./pages/excursiones.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Excursiones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/info-ballenas.html">Avistaje de ballenas</a></li>
+                  <li><a class="dropdown-item" href="./pages/info-bici.html">Circuito mountain bike </a></li>
+                  <li><a class="dropdown-item" href="./pages/info-lobos.html">Buceo con lobos</a></li>
+                  <li><a class="dropdown-item" href="./pages/info-pinguinos.html">Colonia de pingüinos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/reserva.html">Reserva</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/contactanos.html">Contactanos</a></li>
             </ul>
-        </nav>
-        <!-- fin navbar -->
-    </header>
-    <!-- fin cabecera -->
-
-
-
-    <section class="parallax">
-    </section>
-    
-    <!--inicio links a excursiones-->
-    <section class="excursionesDisponibles">
-        <h3 class="subtitulo">~ Nuestras excursiones ~</h3>
-        <div class="cards">
-            <a title="ballenas" href="pages/info-ballenas.html"><img src="assets/img/ballenas.jpg" alt="excursion ballenas" /></a>
-            <a title="bici" href="pages/info-bici.html"><img src="assets/img/bicis.jpg" alt="excursion bicis"/></a>
-            <a title="lobos" href="pages/info-lobos.html"><img src="assets/img/lobos.jpg" alt="excursion lobos"/></a>
-            <a title="pingüinos" href="pages/info-pinguinos.html"><img src="assets/img/pinguinos.jpg" alt="excursion pinguinos"/></a>
+          </div>
         </div>
-    </section>
+      </nav>
+    <!-- fin navbar -->
+
+    <div class="conteiner">
+        <div class="row">
+            <div class="parallax"></div>
+        </div>
+    </div>
+
+    <!--inicio links a excursiones-->
+    <div class="conteiner">
+        <div class="row">
+            <section class="excursionesDisponibles">
+                <h3 class="subtitulo">~ Nuestras excursiones ~</h3>
+                <div class="cards">
+                    <a title="ballenas" href="pages/info-ballenas.html"><img src="assets/img/ballenas.jpg" alt="excursion ballenas" /></a>
+                    <a title="bici" href="pages/info-bici.html"><img src="assets/img/bicis.jpg" alt="excursion bicis"/></a>
+                    <a title="lobos" href="pages/info-lobos.html"><img src="assets/img/lobos.jpg" alt="excursion lobos"/></a>
+                    <a title="pingüinos" href="pages/info-pinguinos.html"><img src="assets/img/pinguinos.jpg" alt="excursion pinguinos"/></a>
+                </div>
+            </section>
+        </div>
+    </div>
     <!--fin links a excursiones-->
 
 
     <!-- inicio de footer --> 
-	<footer>
-		<p>Madryn Adventure</p>
+	<footer class="conteiner">
+        <div class="row">
+		    <p>Madryn Adventure</p>
+        </div>
 	</footer>
-    <!-- fin de footer -->
+    <!--fin de footer--> 
 
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </HTML>
