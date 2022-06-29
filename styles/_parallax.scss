@@ -1,0 +1,12 @@
+.parallax {
+    max-width: 100%;
+
+    background-image: url("../assets/img/colaBallena.jpg");
+
+    height: 500px;
+
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}

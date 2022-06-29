@@ -5,13 +5,21 @@
     box-sizing: border-box;
 }
 
+.alineamiento {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 /*comienzo parallax imagen/video principal*/
 .parallax {
     max-width: 100%;
 
     background-image: url("../assets/img/colaBallena.jpg");
 
-    height: 400px;
+    height: 500px;
 
     background-attachment: fixed; 
     background-position: center; 
@@ -83,16 +91,13 @@ footer{
     background-image: linear-gradient(to right, #213aa1 , #2557b6, #1177e5);
     display: flex;
     height: 5rem;
-    display: flex;
     flex-direction: row;
-}
-
-footer {
-    display: flex;
     align-items: center;
     font-size: medium;
     font-weight: bold;
+
 }
+
 /*fin footer*/
 .fondo {
     background-image: linear-gradient(to right, #213aa1 , #2557b6, #1177e5);

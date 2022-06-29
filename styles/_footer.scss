@@ -1,0 +1,10 @@
+footer{
+    border: 1px solid rgb(255, 255, 255);
+    background-image: $azulado;
+    display: flex;
+    height: 5rem;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+}
